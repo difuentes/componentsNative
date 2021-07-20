@@ -38,6 +38,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = componentNative/main.m; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = componentNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A29AE5C717B54B930BBEDB1F /* libPods-componentNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-componentNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85C337B269E3D0700D92E7E /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
 		D9C3AEF6EC99275247C4F486 /* Pods-componentNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-componentNative.debug.xcconfig"; path = "Target Support Files/Pods-componentNative/Pods-componentNative.debug.xcconfig"; sourceTree = "<group>"; };
 		E2419612B597EC30DCED8B5F /* Pods-componentNative-componentNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-componentNative-componentNativeTests.release.xcconfig"; path = "Target Support Files/Pods-componentNative-componentNativeTests/Pods-componentNative-componentNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E7CA5F9D91979BA465B5AE27 /* Pods-componentNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-componentNative.release.xcconfig"; path = "Target Support Files/Pods-componentNative/Pods-componentNative.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,7 +115,6 @@
 				ED32467E2C0D807D88CBBD4B /* Pods-componentNative-componentNativeTests.debug.xcconfig */,
 				E2419612B597EC30DCED8B5F /* Pods-componentNative-componentNativeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +128,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				A85C337A269E3BCF00D92E7E /* Fonts */,
 				13B07FAE1A68108700A75B9A /* componentNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* componentNativeTests */,
@@ -147,6 +148,14 @@
 				00E356EE1AD99517003FC87E /* componentNativeTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A85C337A269E3BCF00D92E7E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A85C337B269E3D0700D92E7E /* Ionicons.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
