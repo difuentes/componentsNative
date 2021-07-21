@@ -15,13 +15,13 @@ const menuItem :MenuItem[]=[
     {
         name:"animacion 101",
         icon:"flame",
-        components:"Animation101",
+        components:"Animacion101",
         finalIcon:"arrow-forward"
     },
     {
         name:"animacion 102",
         icon:"battery-charging",
-        components:"Animation102",
+        components:"Animacion102",
         finalIcon:"arrow-forward"
     }
 ]
