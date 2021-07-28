@@ -1,12 +1,35 @@
-import React from 'react'
-import { StyleSheet, View } from 'react-native';
+import React,{useRef} from 'react'
+import { StyleSheet, View, Animated,PanResponder } from 'react-native';
+
 
 export const Animacion102 = () => {
+
+    const pan = useRef(new Animated.ValueXY()).current;
+
+  const panResponder = PanResponder.create({
+    onStartShouldSetPanResponder: () => true,
+    onPanResponderMove: Animated.event(
+        [
+            null,
+            {dx: pan.x,dy: pan.y,},
+        ],{useNativeDriver:false}),
+    onPanResponderRelease: () => {
+      Animated.spring(
+        pan, // Auto-multiplexed
+        { toValue: { x: 0, y: 0 },useNativeDriver:false} // Back to zero
+      ).start();
+    }})
+    
+    
+
     return (
         <View style={{...styles.container}}>
-            <View style={styles.purpleBox}>
+            <Animated.View 
+            style={[styles.purpleBox,pan.getLayout()]}
+            {...panResponder.panHandlers}
+            >
 
-            </View>
+            </Animated.View>
         </View>
     )
 }
@@ -20,7 +43,8 @@ const styles = StyleSheet.create({
     purpleBox:{
         width:150,
         height:150,
-        backgroundColor:'purple'
+        backgroundColor:'purple',
+        borderRadius:200
     }
 
 })

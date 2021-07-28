@@ -7,24 +7,10 @@ import { styles } from '../theme/appTheme';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 //interface
-import { MenuItem } from '../interface/appInterfaces';
 import { FlatListItem } from '../components/FlatListItem';
+import { menuItem } from '../data/menuItems';
 
 //objeto menu
-const menuItem :MenuItem[]=[
-    {
-        name:"animacion 101",
-        icon:"flame",
-        components:"Animacion101",
-        finalIcon:"arrow-forward"
-    },
-    {
-        name:"animacion 102",
-        icon:"battery-charging",
-        components:"Animacion102",
-        finalIcon:"arrow-forward"
-    }
-]
 
 export const Home = () => {
 
