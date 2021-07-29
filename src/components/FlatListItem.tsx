@@ -18,10 +18,9 @@ export const FlatListItem = ({menuItem}:Props) => {
     return (
 
 
-
         <TouchableOpacity 
          activeOpacity={0.5}
-         onPress={()=>navigation.navigate(menuItem.components)}
+         onPress={()=>navigation.navigate( menuItem.components)}
         >
             <View style={stylesFlat.container}>
                 <Icon name={ menuItem.icon } size={25} color='purple'/> 

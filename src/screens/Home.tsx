@@ -1,29 +1,18 @@
 import * as React from 'react';
-import {FlatList, Text, View } from 'react-native';
-
-
+import {FlatList, View } from 'react-native';
 
 import { styles } from '../theme/appTheme';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 //interface
 import { FlatListItem } from '../components/FlatListItem';
 import { menuItem } from '../data/menuItems';
+import { HeaderTitle } from '../components/HeaderTitle';
+
 
 //objeto menu
 
 export const Home = () => {
 
-    const {top} = useSafeAreaInsets();
-  
-    //render List header
-    const renderListHeader = ()=>{
-        return(
-            <View style={{marginTop:top+25,marginBottom:20}}>
-                <Text style={{...styles.title,color:'black'}}>Menu</Text>
-            </View>
-        )
-    }
 
     //render separador
     const renderSeparador =()=>{
@@ -41,7 +30,7 @@ export const Home = () => {
                data={menuItem}
                renderItem={({item})=> <FlatListItem menuItem={item}/> }
                keyExtractor={(item)=> item.name}
-               ListHeaderComponent={()=> renderListHeader()}
+               ListHeaderComponent={() => <HeaderTitle title="Menu"/> }
                ItemSeparatorComponent={()=> renderSeparador()}
                />
         </View>
