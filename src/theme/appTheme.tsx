@@ -4,7 +4,9 @@ import { StyleSheet } from 'react-native'
 export const  styles  = StyleSheet.create({
     title:{
         fontSize:35,
-        fontWeight:'bold'
+        fontWeight:'bold',
+        textAlign:'center',
+        color:'#F7DC6F'
     },
     globalMargin:{
         marginHorizontal:20,
@@ -13,5 +15,8 @@ export const  styles  = StyleSheet.create({
     letterMenu:{
         fontSize:18,
         fontWeight:'bold'
+    },
+    container:{
+       flex:1,
     }
 });

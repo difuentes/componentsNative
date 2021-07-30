@@ -18,6 +18,12 @@ export const menuItem :MenuItem[]=[
         icon:"heart",
         components:"SwitchScreem",
         finalIcon:"arrow-forward"
+    },
+    {
+        name:"Alert",
+        icon:"help-circle",
+        components:"AlertaScreem",
+        finalIcon:"arrow-forward"
     }
    
 ]

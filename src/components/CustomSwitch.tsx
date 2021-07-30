@@ -1,12 +1,10 @@
 import React,{useState} from 'react';
-import { Platform, Switch, Text, View, StyleSheet } from 'react-native';
+import {  Switch, View  } from 'react-native';
 
 interface Props{
     isOn: boolean;
     onChange: (value:boolean) => void;
 }
-
-
 
 export const CustomSwitch = ({isOn,onChange}:Props) => {
     
