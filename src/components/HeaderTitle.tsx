@@ -13,7 +13,7 @@ export const HeaderTitle = ({title}:Props) => {
   
     return (
         <View style={{marginTop:top+25,marginBottom:20}}>
-                <Text style={{...styles.title,color:'black'}}>{title}</Text>
+                <Text style={{...styles.title,color:'#763890'}}>{title}</Text>
         </View>
     )
 }

@@ -24,6 +24,12 @@ export const menuItem :MenuItem[]=[
         icon:"help-circle",
         components:"AlertaScreem",
         finalIcon:"arrow-forward"
+    },
+    {
+        name:"FormText ",
+        icon:"book",
+        components:"FormInput",
+        finalIcon:"arrow-forward"
     }
    
 ]
