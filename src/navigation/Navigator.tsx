@@ -6,6 +6,10 @@ import { Animacion102 } from '../screens/Animacion102';
 import { SwitchScreem } from '../screens/SwitchScreem';
 import { AlertaScreem } from '../screens/AlertaScreem';
 import { FormInput } from '../screens/FormInput';
+import { PullToRefresh } from '../screens/PullToRefresh';
+import { SectionListView } from '../screens/SectionListView';
+import { ModalView } from '../screens/ModalView';
+import { InfiniteScroll } from '../screens/InfiniteScroll';
 
 const Stack = createStackNavigator();
 
@@ -22,6 +26,10 @@ export const  Navigator = () => {
       <Stack.Screen name="SwitchScreem" component={SwitchScreem} />
       <Stack.Screen name="AlertaScreem" component={AlertaScreem} />
       <Stack.Screen name="FormInput" component={FormInput} />
+      <Stack.Screen name="PullToRefresh" component={PullToRefresh} />
+      <Stack.Screen name="SectionListView" component={SectionListView} />
+      <Stack.Screen name="ModalView" component={ModalView} />
+      <Stack.Screen name="InfiniteScroll" component={InfiniteScroll} />
     </Stack.Navigator>
   );
 }

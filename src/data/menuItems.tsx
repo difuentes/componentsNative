@@ -30,6 +30,31 @@ export const menuItem :MenuItem[]=[
         icon:"book",
         components:"FormInput",
         finalIcon:"arrow-forward"
+    },
+    {
+        name:"Pull To Refresh ",
+        icon:"refresh",
+        components:"PullToRefresh",
+        finalIcon:"arrow-forward"
+    },
+    {
+        name:"Section List ",
+        icon:"list-outline",
+        components:"SectionListView",
+        finalIcon:"arrow-forward"
+    },
+    {
+        name:"Modal",
+        icon:"planet",
+        components:"ModalView",
+        finalIcon:"arrow-forward"
+    },
+    {
+        name:"Infinite Scroll",
+        icon:"cloudy-night",
+        components:"InfiniteScroll",
+        finalIcon:"arrow-forward"
     }
+   
    
 ]

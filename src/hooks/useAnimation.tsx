@@ -7,17 +7,17 @@ export const useAnimation = () => {
   const opacidad = useRef(new Animated.Value(0.2)).current;
   //ref altura
   const altura = useRef(new Animated.Value(-200)).current;
-
-  const fadeIn =()=>{
+  //animacion de entrada 
+  const fadeIn =(duration:number=300)=>{
       Animated.timing(
           opacidad,{
               toValue:1,
-              duration:400,
+              duration,
               useNativeDriver:true
           }
       ).start();
   }
-
+  //animacion de salida
   const fadeOut =()=>{
       Animated.timing(
           opacidad,{
@@ -27,7 +27,7 @@ export const useAnimation = () => {
           }
       ).start();
   }
-
+  //animacion de rebote al centro
   const BounceIn = ()=>{
       Animated.timing(
           altura
@@ -51,7 +51,7 @@ export const useAnimation = () => {
           }
       ).start();
   }
-
+    //parametros de retorno de Hooks
     return {
         altura,
         opacidad,
